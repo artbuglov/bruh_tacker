@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="ru" data-accent="mono">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Привычки">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAd4klEQVR42u2dd5hc5X3vP+97zvStKrurLqRdFUBCEpIQAiEwYAy2BQgTirkhtuOQayc39mNfbOA6LonjkntvDDjYSXx54oRiAqJ3gyjCwiqooYp6W9XV1tmp57z3j3NmZyWdKbvsTlnO71l4pJ3RzDnv+b7fX/+9Qj3+OVxxxUmkuwSuuOBwpc+io9xFcMVlDldccLjiqhVXXOZwxQWHK6WpVoS7Cq64zOGKa5C64jKHKy44XHHViisuc7jigsOVIaJW3DiHKy5zuOKCwxXXW3HFZQ5XXHC44qoVV1zmcMUFhytDXq24QTBXXOZwxQWHK6634orLHK64zOGKyxyuuOBwZaioFTfO4UomcHwSRSAEYP8fUMrpPdZL1n/K6T0uOIYMGoRAKZSJmcBMYhooBQoEUoPTGdRM2i8JgdDQdKSG0FIfYv1D11spY0gIhASFkcSIYyQREm+A4DBCI6isx19F9WikRvUoxOnmV8dRkjG6ThJpp/MY4ZN0txILYyaROroX6UEIlDmEGUUfojwhQZGMkYwjBIFq6pqon079NGrGUjESbzDHZ4w5/a/JGOGTtDVzfAdHt3FqH+FTmEk0Lx4fQmKaQ49L9CFIFUaCeBdCo3YsDecyYT51U6gYeeabe296cZZVftpLAt1H9RiqxzBhHkCknZO72b+K5i2c2kcyhieA7rXV1pBZTvUvNwyJ+5AISERJxgkNY/xcGhcz9gJ0Xy8zwuhlh/bVR1O2ZaoUQvayZE2ObGXXu+xbRXszUrc5aUhApPzBIQRIEhHMBHVTmHIFkxdRWZd+eL3dk4GSHoO0x1KJdrD3fXYsp3kTSuENDQGIlDU4BFISj2AkaJjKzBtoWozU00+lPwzRD6CYoBCa/dcDa1m/jEMbALzBsvaByzYIJjWMBNEu6qcy60aaFiO1lO6QZ7oeg63RSGkcBOPnMn4u+9ey4WkOrEPz4PFjGuXJHL++sQz1iCDWSbCWOTcz83q0FFuIEsgGKDPNWDveYvUjtB7EXwGy7LRMuXkrQsOIk4zTtJiFX6GqPg2L/JGhekU8bRNVOikLer0nb6vF+ihlgmDqFUycx6pH2PwyysQbKC8KEepX5cMcUiPWRaCGy+5iyuUAykgr+zwBIbXMpkMqYJ4JZ301b3vIrHkzyx+gZT+BqjKKiJQJOKy9G2ln4lw+9Q2q6u1nmfsh9TBEr+cdaaetmY4jtB+hrZlElGg7sXB60+s+KkYgdWpGU9VAVT01Y6kYfhrUbLrK4wJME6kR7+adX7H1NXwViPJQMeUADiExDRJR5t3CgjsRAtPISABnPL+et0U7OLqDgxs4toOOo3S3YcTTQQuh2UHV9BM1UKAMEGge/JVU1TNyMuNmM+rcNFBst0jmSyGbX+bdf0UZePwYBqLEwfHQjaWOjGQMTeeqb9J02WmGQnYNYj2MeJi9q9i1kmM76DqJaSA9aDqaDhLROx+rTnOS04wFSmEmMZIYCYQgWMPIyUxawORLCA078xuzc5iQHNnGqz+h4wT+ihI3QUobHFIjHiFYzTV3M/aC3ITR+yGd3MP25exeSethhED3oXnsnGr/Yg+903jJGKZBxQjOuYjpVzL6/HwhYt1C2yFe/gkn9pQ4PkoTHMK2HOMRKoZz44+pHZsHMlLUfWIv659h1wpiYTvlkbYl1QBcW48NZCRIRNA8TJjLnKWMnXmmK5sFH7Ewz/0tzZsJVGMkEaIErVSh/nlpqXJGNxUjuPHH1I7JgYweWLQfYdXj7HyPeDe+EFIbZNdAICXKJNaN1JhwIQtuo35q7qCL9aqFj8NbCFSVJn+UJDiEJBklNIwb/yE3MqxXTYO1/8W6Z4m0p2BhFPSCgVgXuo9zr2Lhnfgr+4CP5q34K0sQH9oPrpteYpwhScQIVHPTT3Mgw9LxUuPYTl7+CZtfQ9PxBFKVWgUU6xutwo5DH7L7j1Q3UDvWfsnRfLYKhXQfjZdycCNtzXj8pZaFKTFwCIFpIgSf/x71jVmRkQozrH+OV39Ox3ECVaiiJkKtR+sNEGln23IS3YybZeud7PiYMJvdK4l2oXlKyvIotdYEQSLCNd9m7IzcyIiFeflnLH8IoeENYholsbKmge7DF2LNkzz1XdqP2nGaLCGcqnqWfB+p22GVEmKOa0uGOaRGdxsX38Gsz9mlms6rbyIlbc089yP2riZYk961JSKWlvGFOHWQXStpaKK6wU4XZ8JHxXCq6tm2vKSUiywhZES7mDiPi7+YjTNMAylpPcxT93BsJ8HaVBF56YmRxF9JdxtPf48DG7LZyNZL0y5n9vV0d+QO/n6ywCEEyTjBaq75Ziq/KjJwhkbrYZbdR1cL/grMJKUslopRiud+mAsfEmWy+M9pmEKsuyRqD0CiRPF/kCQSXPlXVI60DVJHO8PmjPvobMETwjBL4uKz/5gK6cWEZ3+UFR8CQPNyzTfRfZiqFC6+BBAqJZFOpl5G0yW21shkgbYd5an76GpJmZ9lIspE86AUz/6Igx8iNWeXyjI+Rk5i7heIdpaCcik6OARGkmANi7+SMSRgmRSxbl78KR0nygwZPfjQvZgmL/2MtuaMKXtLucy7ifopxCNFVy7S6gMt2o+QRLu56FYqR2TMWlm08cYvad6GvxLDKPI19+0GNRCYJskEHj/dHbz4c5Jx68aclYvu5bIvlcJtFhWbQhKPMGoqsz6bMVJkGaEbXmTLmwRrMJJlwxbW7UQ6SETxBPD4iXaB4sh23nk41STnqFxMJs5h2mVEu4qrXPQiL18ywfyb0HTnMIBlhB7fy9u/wV/pvJoligyJkUSZzPocUxcxfBzKpOUA295h29usfYZxM5my0Dn/Yu2R+Tez8/3i3nLxGqmFJNbNqKk0XZKhtFPZ3uDv/5lkEq+3bKq3hSSZREqW3MukuenfVwxnwmwmzeOFn/Hmrxh7HoEqB0vLskjqJtG0kK1vFTFnK4tJG0aSeUszWu+mQkjWLOPgh/hC5YMMgTLA5IbvMWkupmE35Vpli0aSKZdw3bdoOcA7D+co45h/Ex5fEclDFu17YxEapjAlA20ohRR0nGD1MvwV5aNQBApiEa7+KyakStfsMlWBkLYCnb6YKYtY/xKHtjh7LjZ5TKZxIbFwvhX2QyQIJiTJOOddidScg99W99jKxwh3Ij0oyiDeZUXzot185m84/6qsZSiKxgUYBiv+MyMjWqsy49MIWazbLxJzGAkqhjP10rRVf7Yd2nKQbe/iD5VNVMNKHC68lZnXZEWGAEF1A/5KDm1h9xpnz0VKlGLc+dRNIhEd4Ebw0o1zCI1YhElzqRjmHCy3Ns3qp4lFEFp5xDOkTriNBbew6L/lVQgdj2CaCI1VT2V045WJpjNtMYlYUZ5UMZjDqtCfvjhjMLGHNnxlQhtSo6uV6ZdzxZdPa5bJpDCE4PBWTANvkINb2b3GbsY52/IApi4kUIVhFIM5ihDbiDFiPONn2OTpGCz/8E1i4dJJXmcTTSPSwfRFLPmfvXoqM8fRpUa4je3v4QvanLHxdWf1apWK1Yxi3PkkihBNLzhZIUnEGT0dzePMClZHwo4/4AlgmmUQHe/uZNQUPvcteyRhFuPAwn0yzkv/RFcrUscw8ATYv5FThxHSwTa3fjP+Art9YairFQWCxvnOL1pw2b2WU4ftSogS1yaxMHWTuPmHdgVXDrNRISQv/YKdq9L+udSIhtnyls0rjjH4SXPwVRResxQYHALDIFTD6ClpnXr2Wmx/D0Spt6JLSSJKsIYb7yFYndGo7I17IXnz39jyFqGaNGtaCdtdq+1JmI5mx7AxDBtDMl5gzVLYyT5CkojS0ESo1mmfKYQk2kXzR+h+u+CldJERx1fJLX9H7Wi7rDU7MqTGO//JyqeoqMXoZZoo0P2cPEzLQerOcVgW68MbmmjeiSdQyDUpLHMIgZFgzHRnCjUVQPNOOk6ieUqXOITAMDAV199N3cSMBUpnIGPdy6x8glCtQ0jDSjPt/9B5WSwZdx6IAu+WwoJDKYTGmKmpWJCT7F2PWcKzCaxWbCPJTfcyYUbukIb1hi3v8Mov8YUyhoM1nb3rs6naUY34gqiCmh2FzcoqE0+A2tHOnpu1/5p3ID2U6PQbAdDdxWf/msZ5+SJjzzpefhBfCEVmcHg5vo9oGH/oTM1i/bFyJMEaOlvQPQWz02VB95yRJFRN5XAH4rBuONJJ2zE0vUT9FCmIdnHNXzLn2nyRcWg7T/29TQkZb0ohdcLttB3pFSHuhQ6l8PqoGomRLGTXkyzotjMMKobjDdh5tTNdXGg5TLgdqZcib1hh0AU3MX9JXvMgpMbJgzzzUzu4nh3uVofw8X3pfXLGpyGobcBMFjLJUkC1IgRmkpr6dEPsmeYItB4hES/FwZ1Sp6uN+Tdw5ZfznRTSdYrHv09Xa14V0QpMRcvhbO+pGWVrWzUEmQOUIljtxJwpaT+Wr0Kx6iTSfxaDyxnhVqYu4DP/3U4M5URGpJMnf0znybxr5RVS0n7c2RqzJFRT4E7aAoMDqusz8grQ0nz64LYMwRIF3R3EIrZq724nERusihipE+mkaT43fSf3RDLLljQSPPF3HNreh8ShVfHUdsw5zGr9proOTSukNVbAIJhVQpKdkBNx25vPdFVCkoij6cy7nqa51NQRj3JoBxvf4MguAgNdMyY1uruoO4el37HD+dmRYf089wsObE3Vyue5vKm2vyyfLzWUzLY4Aw+OQuoUTad2lPPms+IH3W0Za8NIZXQrhnHTdxjdlP79qEZmf5rX/401L54Wmf74yIhHGDGW276fyqDKXLtf8vwv2LScytq+dVEokBqRLiJdBCrOQqHFHCPxBdIHgww1tWKteJYQQiSc+c4Fponu45bvMbrJLvy3z2wz0D1c9zUuup6u1gFI9FvdVokY3gA330PVCEwzjzGBkrcfZf0bVNT2J0kmJPEoiWi2NxS2HqzAQTDysiccDXIp6e7kijuom4CRtIfhW6ARqRFQn7kLBX98loraj8UfVm+Bx89t32fEuHxTJyue4K1HCNX2M32qyD2TubDnDpbPocOmiTfAtAU2ezuYbAJlcu1dLLiBcFv/+cMqsUnGufHbjJmSb+pk03LefpRQ9VA6xqvgzKFy2SWOb7Oiq8EqquvsmpdM/o5pcu1dAH98joqaPm9i68MTMZZ+m8mz8w2DblvJM/+EP5gxQJ6/WZb9n3+imUP32rlZR5vDMHJZeQLZwx/X09kP+0MQbufqL3PeonyRcWALz92P12/HuftPjQrNg+Ypochf4b7KqqFtPZpmiDNjR4KqEc7WuOXphNs4cSDXCYy99MvFN9DVF/0iNSKdXP0lLsojQG51eDfv5LEfYRq5A+Q5PVkzSaiaYJWTN6cA2k8Qi+TQcWUc5zDJsfWl3qtB6GxsKT54nYkzclCrXWtpcq1lnz5HKA/7VNPoPMXFN7DoT/JLnUhaj/HkP5JI4LXi/R9nJQUKhJ7ZewIjialQhTuOo8DFPtB+Mpu1MawB08w4EMwfYvMK1r+Re0CxfTi5yXV3sSAP/pA64Q4uvJZr/yLj2L/TSE4SbueR79N+Am8g4zX3iVYNg5o6+7KdPBk6WwoZ5KAINaThtmyv1zQgMru7SuH18/wv2fBmHgOse/DxF1y8JFv8w+oVmDyb6//a9plzBsjjEZ78OS3N+AZqzJDANKmpc9a5lnS1FbiSoYDeiqkQGm0n7ECCo69R25DqjM28wzx+nn0ABLM+lYv/hb3Rr7sLYOXzVJwVP9U0Il2cM5Nbvnvav8pCb4bB4//Ank2EBq7XqIc4s0jrsQI7LIVkDoWm0XGSRMxp9IAAGDGWYFXqiInMG9cb4Nn72bC8b/pl4fVn6hepEQkzfDS33osvaPeiZbl+y2p+4SF2rSNUPZC9Akqhe6k/x8kaTe2l1qMf1+wtXXAoZVdFdLaCUyQDCFVTPZJkIsf2tfDxTH746K1feuNDSuJRaur44t8SqMidOrHckxd+xdpXCQ3oACrL4AhWMXy0E3UphCARp/UYUitkoKOwHW9SI9rNqSPOmtWqABo1mWQyzZ+OP6YCgTfA03njg172R2crUieRQPNw670MG5Vf6kRjxTJWvWQHyAdyZQSJOMPHEnQa9GOtU+cpOtvQdEw1VDveBIbB4Z2Q2eqcPCsvg9xaRF/e+LD0i2ny2bu45AbaT6J5uP0+GvLuLfjDs7z2MKFBGMJkxX8npQ56cjRHju4lWujm4cIOjLNKWg5sy2aTjp9GRS3xaO6qHxsfQZ6+HwWz87BPBTZ/JBNMuoBz8u8tWMnr/06gKnMA9+Mti8drg8NhYyiAA1sHwGEu3SAYqe6uYweIdBKoPKsGX6AUFbWMmszOdXnNAVMgBN4gTz8AeeDDPn1NseTrabDmRMaONTzxv/EGUgFyMcC0kUhQM4qGDNaoVeBy8CM0b4G7AAusVhS6Tucpjux1NjssNEy7CCPvaE9avzzA+uX5HeAl7BRXju5WE6lxeBfL7kfXs/YWfBxwSOJRGmfh8TmEWVUqcH7yMLq3wDX5hU+8CZIGO9Y6mx2Wrjl3AdUjSCb6EiToIz6EyN33LCVH9/EfPyQRQ/MM1tA608TjY9YVzrShTFDs3khXO1qhOzYKPp/DNNE87NtqpyfOfmbKJFTN1Pl9nPmU8l+W5c8fWQPkUqPjFL/7RyJh9NS8x8GYVhKLMm4aYxqd69otPbh7E0iUGurzOazmraP7OLTTjhk7ypxP9bnvrz/6JQMyhKS7k9/+cEAD5Jn8lASzr8jopwhJZyt7N+PzF37eZjHqOYQkHmPTioyaRSnGTaVpDtFw3yZS9OaPdf3Ch/UJyQRP/l+O7sU/qCNTBPEoDROZcalzeZsFl+2raTtZlDqPYkwTNE18AbatTjnuytl5W7TUBkrfPv9j4MM+ydzksZ+xfS2BKjsMOngnRsRjLFyCx+fsBFm3v/FdNE8hY1/Fniaoezh1lO2rAYfIgTW/d8J0plzYn8hPb/3SB3woW6G8+Bu2vu+QohtwhWLRxgWL7XHNDtpN0LyLAzvw+YtSmqoXZ3qOFUr/4G1mXZHNa7jqNnZttIM/qq/4kHiDLHvQtmDyrOx66WFWvkjFMJKD2s+uEBqJBJ+6FY/XOXhvUckHb9nNw8UAR5FqSE2FN8SeD9m9yY5qO5LHqEnMvZpwV99bHUVavzz1YG7+sKCz8iVWPJtKtw5y822ki6bZzLjE2WuzuKT1OBtX4AsNSli2dMFBavHffSb9Z4cHbHL17dSNS2X5+66/LP3y1IOsewupYSQdTBwjidT44yu88K8EqwrhFFhW1+e/msMu/sPzhIsQ3iiqQWr9GCa+IDs3sHtThpMDBAr8IZZ8NdVD2w/jN8UfTz7AB8vRdBCYBqaJadpn0mo629fywm/ssUwFSE2HO7nqdkaOyaBQUrSx7m38oSKe51XU1gSrx+udpzNDV2KaNM3isqWpECH95A9vgKcf4pXfkoghNaRESttXevMJHv05utdO7gzuZtQId3L+xSz8bMZGOmtUy3vPE+7IeCx3gQzSYoLDxB/kow18+AdmXOK8WNaBidd8kYM72LOFYGV/nAhrL3p9vL2MjzZw/gLGNiIkR/aydRX7t+MPFQQZkniU2jqWfg2RQZtawdnmvaz5fT9vdkC9lWLCA1Ohe3n1EZpm48s8BFhq3Pw3/Ppeutrx9uvwIuvBB6s5fojXHrXnvRhJdC+BSkxz0JFhlXshueUbVNRkLDyznJRXfks8TsBT3Nloxe54UwqPjxOHeeN3GdOe1nEktXXc/m2kRjLZ/0G+poHHS6gafwhfkFB1P6HWD2QAkW6W/iUTz83Y/WBl+9a8wY51Az9rpPzAYa1IsJL3X+XAR7YScTY+DCZM48577faefuNDqdS5aymDtADIUBAJ84WvM+eKjBEXKzbT0cLrj+ELlEJDdmmcZa8kSvHkg8QiGTtOrUBF40z+9F4QJJMIrTwO9lKCSDdLv878T2eLxVkh0WW/pqMVzYeJe5Z9al28AY4e5Pn/l6Hl63R83HkPCOLxUj+QxfK2Il3c9DUuujobMuzh6M+yZTWByhIZplgyXfamQaiSVb9n9RtILWMutAcff3YvwQoi4X76t4VYWo14DNPkT/5HXsjYu5VXHy26h9JbtB9cNqNUVlOBx8v2D2i6gNoRGa02ITENhjcwfR77P+L4YXz+VNSkRESgaYQ7qR7Bn97NeRfl0CZSo6OVh/+eRLzAbUvlAw7rwRsGO9YxfS6hKufjAXv8l4oqLlxMtJvdW5ASzVMSy2rZ1OEOzruIL91Dw/isyFAgiEX4959w/FCJ2KGlCg6l8HjoamPvNi64FK8v4yE3lmmi6Uy/kLqx7NtGRytef44zngfbK5GSSDe6l2vv4Iav4gvYyd4soRfg8V+w/QOC1RildVyE9oNFpQQOGx9+Th1nzzZmLMCTFR8oTMWoCcxaRGc7h/aQTOLxftwhO/2AhdCIx4hFaZzJHd/i/IvsC8jULtUz7/Z397N+BRXVRTn/McdtqftuL0VrztLZ50znK/fhD+WY59fz6s6NvP4Ee7cjJf6A/dJg60GrbCcRp2E8V36BOZeddkkZkaEQgsfvZ81yKmtKEBmAUPd+sfQuqmfOUwfnTOfP/xf+YH7LLQE2vc+KF9m7DQQ+vz0S2kq3DojOEb3c1HiUZJLRE7nkWuZegccLym61yuK3W9f5WA8ykhmn4LngyMEf46dwxzcY3pDvcQWWbHqfNW+zZwuRLjw+dK99ADiqvxpHpAc6JBPEY3i8TJjChYuZvQivLzdh9HitkTD/9RAbVw5K5+0nBRwWPrq7qB3JnXczdhKmiRQ5yrR6P6GjB1m/gm0fcLyZeASp4/Gg6em+yB6g9EZMz74XIj0BxjBIJjAS6F6G19M0kzmXMXGqw5dmR0Z7C//xf9izlcrq0tQmvcBxT2mDw8JHLIruYelXmbv4TIbIApGetjbToHk/uzez80OOHKCrnXjMVkMWUKQ87QOt/AsKw7BbFD0eglXUjabxfJpmMOYcvP5esMiF1x6tt2szv/slbScJVAzkhI9PLjh6Al/RCJd+hiV/hsebW8X0PJUzWkIiXZw8xpH9nDxCyzFOnSARI9pNLGojySqOD1Wi6dSOZFgdw+sZPYERo6isOR185JX/67nUN5/mtScQItUWiwuOAXQXBeFOxjfyhbsY15gvmfeYI1ba07EfNdJNvKdMVaHphCqdHrzqRUgiry+1LJXWkyz7F7asJVCRLXlUcuD4bpmAo0fFRLvx+Fj8ea5aiu7pww7uzfC2hSFyYEuZ6Xfm7L0+k7FS4a+Vr/H7p2hrIVSJaZT4QdvlDI4eH7K7i3GNXHcb517YN5LPEpI6M8LW34/qUWQHdvHyo2zfgM+P7i0LVVLm4LAhohGLoEwuWMjlSxjfmNroFHIA9Fk0k/r2E82seJlVy0nECYR6MVB5geM7d1CmIlLn93i8zJjP5Z+3IXKGqzLomDjd5j3RzLuv8MG7hDsJhGyeK9MFLmNw9GgZpYiE8fg4fy7zLmfqTLvIQ6XaXwcDJfZsoF66bO921r7L+pWEO/AH0fSy0yNDDhxpQ0QR7UYIxkxk1kJmzqduzGmeZw/Z9BMrKn2cSm/N1dbClg9Y9x77PyIRHxqwSIHj7iEBjjSLQCJGPEaoiklTaZrBtAuoH3NaUMQ+8yblhjjCJW0iKGdXpeUYOzby0WZ2b6WtBd2Dz2/HY4aKDC1wpCMiEjNJLIaRJBBiZAPjGpk0jXGTGDYSX6A/H5uI09bC4X3s2c7+nRxvJtyBsHJ7nlynwLjgKLmbk/YJQIkEyTiAP0hFNcNGMryOEQ2EqhhRj5TUjkQKeg9QaW0hkaC9ha4OWo7RcoyW43S2EQljKnQPHg+aBlY7rhqS66cP0ftK+ZaWeLzprGl7K6dOsGOT3V1ntb75A2dGPGORdKe19TZNR9MIVNjt/0phmAxp0fkkSO+D9XQd3ZNqVVX2aaZnZ0e9vpSRkaoBsT7ENPnEiM4nTezw+VkKKAuePqlSpLFP5WCwuEsg3SVwxQWHK6634orLHK64zOGKyxyuuOBwpezUiuvQu+IyhysuOFxxvRVXXOZwxQWHK65accVlDldccLgy5NWKGwRzxWUOV1xwuOJ6K664zOGKCw5XXLXiisscrgwV5nDjHK64zOGKCw5XXIPUFZc5XHHB4YqrVlxxmcMVFxyuDG35/4zUr+6rfDbGAAAAAElFTkSuQmCC">
+<title>Привычки</title>
+<style>
+:root{
+  --bg:#F2F2F2; --panel:#FFFFFF; --text:#000000; --sec:#8E8E93; --track:#D6D6D8; --sep:rgba(60,60,67,.18);
+  --sheet:#F2F2F7; --group:#FFFFFF; --fill:rgba(120,120,128,.12); --danger:#FF3B30;
+  --accent:#000000; --on-accent:#FFFFFF; --tint:4%; --name:var(--text);
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E0E10; --panel:#000000; --text:#FFFFFF; --sec:#8E8E93; --track:#3A3A3C; --sep:rgba(84,84,88,.55);
+    --sheet:#1C1C1E; --group:#2C2C2E; --fill:rgba(118,118,128,.24); --danger:#FF453A; color-scheme:dark;
+  }
+  :root:not([data-theme="light"])[data-accent="mono"]{--accent:#FFFFFF;--on-accent:#000000;--tint:12%}
+}
+:root[data-theme="dark"]{
+  --bg:#0E0E10; --panel:#000000; --text:#FFFFFF; --sec:#8E8E93; --track:#3A3A3C; --sep:rgba(84,84,88,.55);
+  --sheet:#1C1C1E; --group:#2C2C2E; --fill:rgba(118,118,128,.24); --danger:#FF453A; color-scheme:dark;
+}
+:root[data-theme="dark"][data-accent="mono"]{--accent:#FFFFFF;--on-accent:#000000;--tint:12%}
+:root:not([data-accent="mono"]){--on-accent:#FFFFFF;--tint:14%;--name:var(--accent)}
+:root[data-accent="purple"]{--accent:#A04BF0}
+:root[data-accent="blue"]{--accent:#1A9BF0}
+:root[data-accent="green"]{--accent:#1FAE5B}
+:root[data-accent="orange"]{--accent:#F5860A}
+:root[data-accent="pink"]{--accent:#EE4380}
+:root[data-accent="red"]{--accent:#EC3F34}
+:root{--card:color-mix(in srgb,var(--accent) var(--tint),var(--panel))}
+
+html{min-height:100%;scroll-padding-top:env(safe-area-inset-top,0px);background:var(--bg)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;
+  -webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+input,textarea{-webkit-user-select:text;user-select:text}
+button{font-family:inherit;color:inherit}
+body[data-tab="habits"] #pageStats,body[data-tab="stats"] #pageHabits{display:none}
+
+.page{max-width:560px;margin:0 auto;min-height:calc(100vh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));display:flex;flex-direction:column}
+.nav{display:grid;grid-template-columns:48px 1fr 48px;align-items:center;height:52px;padding:0 8px}
+.nav h1{margin:0;text-align:center;font-size:18px;font-weight:600;letter-spacing:.2px}
+.icon-btn{border:0;background:none;width:44px;height:44px;display:grid;place-items:center;border-radius:22px;cursor:pointer;padding:0;color:var(--text)}
+.icon-btn svg{width:25px;height:25px}
+.icon-btn:active{opacity:.5}
+
+/* Неделя */
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;padding:4px 10px 14px}
+.day{border:0;background:none;padding:6px 0 8px;border-radius:24px;display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer;transition:background-color .2s}
+.day.sel{background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.day .wd{font-size:15px;font-weight:500;color:var(--sec)}
+.day.sel .wd{color:var(--text);font-weight:700}
+.day .dot{width:5px;height:5px;border-radius:50%;background:transparent}
+.day.today .dot{background:var(--accent)}
+.day:disabled{cursor:default}
+.ring{position:relative;display:inline-grid;place-items:center;flex:none}
+.ring svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg);overflow:visible}
+.ring circle{transition:stroke-dashoffset .45s ease}
+.ring b{position:relative;font-weight:400;font-variant-numeric:tabular-nums}
+.day .ring{width:38px;height:38px}.day .ring b{font-size:16px}
+
+/* Панель со списком */
+.panel{flex:1;background:var(--panel);border-radius:34px 34px 0 0;padding:6px 14px calc(120px + env(safe-area-inset-bottom,0px))}
+.grabber{display:flex;justify-content:center;padding:2px 0 10px;color:var(--track)}
+.grabber svg{width:40px;height:12px}
+.list{display:flex;flex-direction:column;gap:10px}
+
+.card{position:relative;display:flex;align-items:center;gap:12px;min-height:72px;padding:12px 16px 12px 16px;border-radius:40px;background:var(--card);
+  cursor:pointer;touch-action:manipulation;outline:none;transition:transform .18s ease,opacity .3s ease,background-color .3s}
+.card.pressed{transform:scale(.97)}
+.card:focus-visible{box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 50%,transparent)}
+.cb{width:26px;height:26px;flex:none;border-radius:50%;border:2px solid var(--sec);display:grid;place-items:center;color:var(--on-accent);transition:all .25s}
+.cb svg{width:14px;height:14px;opacity:0}
+.emo{font-size:28px;line-height:1;flex:none;width:32px;text-align:center}
+.nm{flex:1;min-width:0;font-size:17px;font-weight:600;line-height:1.28;color:var(--name);overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow-wrap:break-word}
+.skip{border:0;background:none;flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:5px;padding:6px 0 6px 4px;cursor:pointer;color:var(--sec)}
+.skip .si{width:28px;height:22px;display:block}
+.skip small{font-size:11px;line-height:1.15;white-space:nowrap}
+.card.done{opacity:.45}
+.card.done .cb{background:var(--accent);border-color:var(--accent)}
+.card.done .cb svg{opacity:1}
+.card.done .nm{text-decoration:line-through;text-decoration-thickness:2px}
+.card.skipped .nm,.card.skipped .emo{opacity:.4}
+.card.skipped .skip{color:var(--accent)}
+.card.skipped .skip .si{fill:currentColor}
+.card.dim{opacity:.45}
+/* «Отметь быстро»: карточка на миг инвертируется и увеличивается */
+.card.flash{animation:flash .75s cubic-bezier(.3,1.2,.5,1)}
+.card.flash .nm,.card.flash .skip{animation:flashText .75s}
+.card.flash .cb{animation:flashCb .75s}
+@keyframes flash{0%{transform:scale(1);opacity:1}
+  18%{transform:scale(1.06);opacity:1;background:var(--text)}
+  65%{transform:scale(1.06);opacity:1;background:var(--text)}
+  100%{transform:scale(1)}}
+@keyframes flashText{0%,100%{}18%,65%{color:var(--panel);text-decoration-color:transparent}}
+@keyframes flashCb{0%,100%{}18%,65%{background:var(--panel);border-color:var(--panel);color:var(--text)}}
+
+.hint{color:var(--sec);text-align:center;font-size:15px;margin:28px 12px}
+.empty{text-align:center;padding:56px 0 24px}
+.empty .big{font-size:60px;line-height:1}
+.empty p{font-size:17px;font-weight:600;margin:14px 0 18px}
+.pill{border:0;background:var(--accent);color:var(--on-accent);font-size:17px;font-weight:600;padding:14px 24px;border-radius:30px;cursor:pointer}
+.paused-toggle{border:0;background:none;color:var(--sec);font-size:15px;font-weight:500;padding:18px 6px 4px;display:flex;align-items:center;gap:6px;cursor:pointer;align-self:flex-start}
+.paused-toggle svg{width:12px;height:12px;transition:transform .2s}
+.paused-toggle.open svg{transform:rotate(90deg)}
+
+/* Таббар */
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:5;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
+  padding:8px 28px env(safe-area-inset-bottom,0px);min-height:84px;background:var(--panel);
+  box-shadow:0 -0.5px 0 var(--sep)}
+.tab{border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:12px;color:var(--sec);cursor:pointer;padding:6px}
+.tab svg{width:26px;height:26px}
+body[data-tab="habits"] .tab[data-tab="habits"],body[data-tab="stats"] .tab[data-tab="stats"]{color:var(--text)}
+.plus{width:58px;height:58px;border-radius:50%;border:0;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;cursor:pointer;margin:0 20px}
+.plus svg{width:26px;height:26px}
+.plus:active{transform:scale(.94)}
+
+/* Статистика */
+.picker{margin:6px 14px 16px;display:flex;align-items:center;gap:14px;height:62px;padding:0 20px;border-radius:31px;border:1px solid var(--sep);
+  background:color-mix(in srgb,var(--text) 3%,var(--bg));cursor:pointer;font-size:18px;font-weight:600;text-align:left}
+.picker .pi{width:26px;height:26px;display:grid;place-items:center;font-size:22px;flex:none}
+.picker .pi svg{width:24px;height:24px}
+.picker span.t{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.picker .ud{width:18px;height:22px;color:var(--sec);flex:none}
+.streak-card{display:flex;align-items:center;gap:10px;background:var(--card);border-radius:36px;padding:14px 16px 14px 20px;margin-top:4px}
+.streak-card .fire{font-size:30px}
+.streak-card .n{font-size:40px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}
+.streak-card .lbl{font-size:14px;font-weight:600;line-height:1.2;color:var(--text);opacity:.75}
+.mini{margin-left:auto;display:flex;gap:6px}
+.mini .ring{width:32px;height:32px}.mini .ring b{font-size:13px}
+.mini .sk{width:32px;height:32px;border-radius:50%;border:2px solid var(--track);display:grid;place-items:center;color:var(--sec)}
+.mini .sk svg{width:16px;height:12px}
+.pills{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0 26px}
+.spill{display:flex;align-items:center;gap:10px;background:var(--text);color:var(--panel);border-radius:40px;padding:16px 18px}
+.spill .n{font-size:36px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.spill .l{font-size:14px;line-height:1.2;opacity:.9}
+.yearbar{display:flex;align-items:center;margin:0 4px 4px}
+.yearbar h2{flex:1;font-size:28px;font-weight:700;margin:0}
+.yearbar .icon-btn svg{width:22px;height:22px}
+.yearbar .icon-btn:disabled{opacity:.25}
+.month h3{font-size:18px;font-weight:600;margin:18px 4px 10px;color:var(--text);opacity:.8}
+.mgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px 2px;justify-items:center}
+.cd{border:0;background:none;padding:0;width:42px;height:42px;display:grid;place-items:center;cursor:pointer;border-radius:50%}
+.cd .ring{width:42px;height:42px}.cd .ring b{font-size:16px}
+.cd.fut,.cd.na{color:var(--track);font-size:16px;cursor:default}
+.cd.sk{border:2px solid var(--track);color:var(--sec);width:40px;height:40px}
+.cd.sk svg{width:20px;height:15px}
+.cd.today .ring b{font-weight:700}
+
+/* Шторки */
+.backdrop{position:fixed;inset:0;background:rgba(0,0,0,.4);opacity:0;transition:opacity .28s;z-index:10}
+.backdrop.open{opacity:1}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:11;margin:0 auto;max-width:560px;max-height:calc(100% - env(safe-area-inset-top,0px) - 10px);
+  background:var(--sheet);border-radius:18px 18px 0 0;transform:translateY(100%);transition:transform .34s cubic-bezier(.2,.9,.3,1);
+  display:flex;flex-direction:column;padding-bottom:env(safe-area-inset-bottom,0px)}
+.sheet.full{height:calc(100% - env(safe-area-inset-top,0px) - 10px)}
+.sheet.open{transform:none}
+.sheet.clear{background:transparent}
+.sheet-head{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:6px 4px;min-height:54px;flex:none}
+.sheet-head .title{font-weight:600;font-size:17px;text-align:center}
+.sheet-head .l{justify-self:start}.sheet-head .r{justify-self:end}
+.link{border:0;background:none;color:var(--text);font-size:17px;padding:10px 14px;cursor:pointer}
+.link.strong{font-weight:700}
+.link:disabled{opacity:.3;cursor:default}
+.sheet-body{overflow-y:auto;-webkit-overflow-scrolling:touch;padding:6px 16px 28px;flex:1}
+.group{background:var(--group);border-radius:16px;overflow:hidden;margin-bottom:22px}
+.glabel{font-size:13px;color:var(--sec);margin:0 16px 7px}
+.gfoot{font-size:13px;color:var(--sec);margin:-15px 16px 22px;line-height:1.4}
+.field{width:100%;border:0;background:none;color:var(--text);font-size:17px;padding:13px 16px;outline:none;font-family:inherit}
+.field::placeholder{color:var(--sec)}
+.row{display:flex;align-items:center;justify-content:space-between;min-height:48px;padding:0 16px;gap:12px;font-size:17px}
+.row input[type=date]{border:0;background:var(--fill);color:var(--text);border-radius:8px;padding:6px 10px;font:inherit;font-size:16px}
+.emo-hero{display:flex;justify-content:center;margin:4px 0 20px}
+.emo-hero .big{width:104px;height:104px;border-radius:52px;display:grid;place-items:center;font-size:58px;background:var(--card);cursor:pointer}
+.emo-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:2px;padding:8px}
+.emo-grid button{border:0;background:none;font-size:26px;aspect-ratio:1;border-radius:12px;cursor:pointer;padding:0;line-height:1}
+.emo-grid button.on{background:var(--fill)}
+.danger-btn{width:100%;border:0;background:none;color:var(--danger);font-size:17px;padding:14px;cursor:pointer}
+.actions{padding:0 8px 8px}
+.actions .group{margin-bottom:8px;background:var(--group)}
+.act{display:flex;align-items:center;gap:12px;width:100%;border:0;background:none;color:var(--text);font-size:17px;padding:15px 18px;cursor:pointer;text-align:left}
+.act + .act{border-top:.5px solid var(--sep)}
+.act > svg{width:20px;height:20px;flex:none}
+.act .e{font-size:22px;width:24px;text-align:center}
+.act .tick{margin-left:auto;width:18px;height:18px}
+.act.cancel{justify-content:center;font-weight:600}
+.act-head{display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:.5px solid var(--sep);font-weight:600;font-size:15px}
+.act-head .e{font-size:26px}
+.swatches{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;padding:14px 16px}
+.sw{aspect-ratio:1;border-radius:50%;border:0;cursor:pointer;width:100%;max-width:40px;justify-self:center;box-shadow:inset 0 0 0 1px rgba(128,128,128,.35)}
+.sw.on{box-shadow:0 0 0 2.5px var(--group),0 0 0 4.5px var(--text)}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);background:var(--fill);border-radius:10px;padding:2px;margin:10px 16px;gap:2px}
+.seg button{border:0;background:none;color:var(--text);font-size:14px;font-weight:500;padding:8px 0;border-radius:8px;cursor:pointer}
+.seg button.on{background:var(--group);box-shadow:0 1px 4px rgba(0,0,0,.14);font-weight:600}
+textarea.field{min-height:110px;font-size:12px;font-family:ui-monospace,Menlo,monospace;resize:vertical;line-height:1.4}
+.gbtn{width:100%;border:0;border-top:.5px solid var(--sep);background:none;color:var(--text);font-weight:600;font-size:17px;padding:14px;cursor:pointer}
+.howto{font-size:15px;line-height:1.5;padding:12px 16px;margin:0}
+.toast{position:fixed;left:50%;bottom:calc(100px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);opacity:0;
+  background:rgba(30,30,32,.94);color:#fff;font-size:15px;padding:10px 16px;border-radius:14px;z-index:20;transition:all .25s;pointer-events:none;max-width:90%;text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body data-tab="habits">
+
+<section class="page" id="pageHabits">
+  <header class="nav"><span></span><h1>Привычки</h1><button class="icon-btn" data-settings aria-label="Настройки"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button></header>
+  <div class="week" id="week"></div>
+  <div class="panel">
+    <div class="grabber"><svg viewBox="0 0 40 12" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M4 4q16 8 32 0"/></svg></div>
+    <div class="list" id="list"></div>
+  </div>
+</section>
+
+<section class="page" id="pageStats">
+  <header class="nav"><span></span><h1>Статистика</h1><button class="icon-btn" data-settings aria-label="Настройки"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button></header>
+  <button class="picker" id="picker"></button>
+  <div class="panel" id="stats"></div>
+</section>
+
+<nav class="tabbar">
+  <button class="tab" data-tab="habits"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M7.5 12.3l3 3 6-6.3" fill="none" stroke="var(--panel)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Привычки</span></button>
+  <button class="plus" id="addBtn" aria-label="Новая привычка"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+  <button class="tab" data-tab="stats"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M10.8 3.1A9 9 0 1 0 20.9 13.2H10.8z"/><path d="M12.9 1.2v9.9h9.9a10 10 0 0 0-9.9-9.9z"/></svg><span>Статистика</span></button>
+</nav>
+<div class="toast" id="toast"></div>
+
+<script>
+(() => {
+'use strict';
+
+const EMOJI = ['💦','💧','🧘','📕','📚','💪','🥗','🍎','🏃','🚶','🚴','🏊',
+  '🛏️','🌙','🌅','⏰','💤','🧠','✍️','📝','📖','🗣️','💻','🎯',
+  '🥦','🍳','🥤','☕️','💊','🦷','🧴','🚿','🧹','🧺','🌱','🪴',
+  '🚭','🚫','🍺','📵','🍬','🍔','💰','📈','🛒','🐶','🙏','😊',
+  '🎸','🎹','🎨','📷','🎧','❤️','✨','🔥','⭐️','🌍','🤸','⚽️'];
+const ACCENTS = [
+  ['mono', 'linear-gradient(135deg,#000 50%,#fff 50%)'], ['purple', '#A04BF0'], ['blue', '#1A9BF0'],
+  ['green', '#1FAE5B'], ['orange', '#F5860A'], ['pink', '#EE4380'], ['red', '#EC3F34']];
+const LS_KEY = 'habits.v1', THEME_KEY = 'habits.theme', ACCENT_KEY = 'habits.accent';
+
+const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+const SKIP = '<svg class="si" viewBox="0 0 28 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M2.5 3.5l11 7.5-11 7.5z"/><path d="M14.5 3.5l11 7.5-11 7.5z"/></svg>';
+const ICONS = {
+  stats:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M10.8 3.1A9 9 0 1 0 20.9 13.2H10.8z"/><path d="M12.9 1.2v9.9h9.9a10 10 0 0 0-9.9-9.9z"/></svg>',
+  edit:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>',
+  up:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>',
+  down:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>',
+  pause:'<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>',
+  play:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 5.5v13a1 1 0 0 0 1.5.9l10.5-6.5a1 1 0 0 0 0-1.8L8.5 4.6A1 1 0 0 0 7 5.5z"/></svg>',
+  chevL:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>',
+  chevR:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>',
+  allCheck:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M7.5 12.3l3 3 6-6.3" fill="none" stroke="var(--panel)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  updown:'<svg class="ud" viewBox="0 0 18 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8l5-5 5 5M4 14l5 5 5-5"/></svg>',
+  tick:'<svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'
+};
+
+// ---------- Даты ----------
+const pad = n => String(n).padStart(2, '0');
+const keyOf = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+const parseKey = k => { const [y, m, d] = k.split('-').map(Number); return new Date(y, m - 1, d); };
+const addDays = (d, n) => new Date(d.getFullYear(), d.getMonth(), d.getDate() + n);
+const todayKey = () => keyOf(new Date());
+const fmt = (d, o) => d.toLocaleDateString('ru-RU', o);
+const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+const plural = (n, a, b, c) => { const n10 = n % 10, n100 = n % 100;
+  if (n10 === 1 && n100 !== 11) return a;
+  if (n10 >= 2 && n10 <= 4 && (n100 < 12 || n100 > 14)) return b; return c; };
+
+// ---------- Состояние и хранение ----------
+let state = { habits: [], updatedAt: 0 };
+let selected = todayKey();
+let showPaused = false;
+let statsScope = 'all';
+let statsYear = new Date().getFullYear();
+
+function normalize(s) {
+  s.habits = (s.habits || []).map((h, i) => ({
+    id: String(h.id), name: String(h.name || ''), emoji: h.emoji || '⭐️', color: +h.color || 0,
+    start: h.start || todayKey(), paused: !!h.paused,
+    done: Array.isArray(h.done) ? h.done.filter(k => typeof k === 'string') : [],
+    skipped: Array.isArray(h.skipped) ? h.skipped.filter(k => typeof k === 'string') : [],
+    order: Number.isFinite(+h.order) ? +h.order : i }));
+  return s;
+}
+function loadLocal() {
+  try { const s = JSON.parse(localStorage.getItem(LS_KEY)); if (s && Array.isArray(s.habits)) state = normalize(s); } catch (e) {}
+}
+function saveLocal() { try { localStorage.setItem(LS_KEY, JSON.stringify(state)); } catch (e) {} }
+
+let db = null, dbTimer = null, syncStatus = 'local';
+async function initDb() {
+  try {
+    if (!window.claude || typeof window.claude.use !== 'function') return;
+    db = await window.claude.use('db');
+    if (!db) return;
+    const snap = await db.doc('habits/state').get();
+    const remote = snap.exists ? snap.data() : null;
+    if (remote && Array.isArray(remote.habits) && (remote.updatedAt || 0) > (state.updatedAt || 0)) {
+      state = normalize(JSON.parse(JSON.stringify({ habits: remote.habits, updatedAt: remote.updatedAt })));
+      saveLocal(); render();
+    } else if (state.habits.length) { await pushDb(); }
+    syncStatus = 'cloud';
+  } catch (e) { db = null; syncStatus = 'local'; }
+}
+function scheduleDb() { if (!db) return; clearTimeout(dbTimer); dbTimer = setTimeout(pushDb, 700); }
+async function pushDb() {
+  if (!db) return;
+  try { await db.doc('habits/state').set({ habits: state.habits, updatedAt: state.updatedAt }); syncStatus = 'cloud'; }
+  catch (e) { syncStatus = 'error'; }
+}
+function commit(full = true) { state.updatedAt = Date.now(); saveLocal(); scheduleDb(); if (full) render(); }
+
+// ---------- Логика ----------
+const byId = id => state.habits.find(h => h.id === id);
+const active = () => state.habits.filter(h => !h.paused).sort((a, b) => a.order - b.order);
+const pausedList = () => state.habits.filter(h => h.paused).sort((a, b) => a.order - b.order);
+function statusOf(h, k) { return h.done.includes(k) ? 'done' : h.skipped.includes(k) ? 'skip' : 'none'; }
+function setStatus(h, k, s) {
+  h.done = h.done.filter(x => x !== k); h.skipped = h.skipped.filter(x => x !== k);
+  if (s === 'done') h.done.push(k); else if (s === 'skip') h.skipped.push(k);
+}
+/** Состояние дня для набора привычек: пропуск не ломает серию и не считается невыполнением */
+function dayInfo(list, k) {
+  const rel = list.filter(h => h.start <= k);
+  if (!rel.length) return { p: 0, st: 'na' };
+  let d = 0, s = 0;
+  for (const h of rel) { const st = statusOf(h, k); if (st === 'done') d++; else if (st === 'skip') s++; }
+  const need = rel.length - s;
+  if (!need) return { p: 0, st: 'skip' };
+  const p = d / need;
+  return { p, st: p >= 1 ? 'done' : d ? 'partial' : 'none' };
+}
+function streakOf(list) {
+  let d = new Date();
+  const t = dayInfo(list, keyOf(d)).st;
+  if (t !== 'done' && t !== 'skip') d = addDays(d, -1);
+  let n = 0;
+  for (let i = 0; i < 4000; i++) {
+    const st = dayInfo(list, keyOf(d)).st;
+    if (st === 'done') n++; else if (st !== 'skip') break;
+    d = addDays(d, -1);
+  }
+  return n;
+}
+function move(id, dir) {
+  const list = active(); const i = list.findIndex(h => h.id === id), j = i + dir;
+  if (i < 0 || j < 0 || j >= list.length) return;
+  [list[i], list[j]] = [list[j], list[i]];
+  list.forEach((h, n) => { h.order = n; }); commit();
+}
+
+function ringHTML(p, label, extra = '') {
+  const C = 2 * Math.PI * 16.5;
+  const arc = p > 0 ? `<circle cx="18" cy="18" r="16.5" fill="none" stroke="var(--accent)" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - Math.min(1, p))}"/>` : '';
+  return `<span class="ring ${extra}"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="16.5" fill="none" stroke="var(--track)" stroke-width="2"/>${arc}</svg><b>${label}</b></span>`;
+}
+
+// ---------- Вибрация (iOS 18+) ----------
+const hapticLabel = (() => {
+  const l = document.createElement('label'); l.setAttribute('aria-hidden', 'true');
+  l.style.cssText = 'position:fixed;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;left:-10px;top:0';
+  const i = document.createElement('input'); i.type = 'checkbox'; i.setAttribute('switch', ''); i.tabIndex = -1;
+  l.appendChild(i); document.body.appendChild(l); return l;
+})();
+function haptic() { try { if (navigator.vibrate) navigator.vibrate(12); else hapticLabel.click(); } catch (e) {} }
+
+// ---------- Экран «Привычки» ----------
+const $ = s => document.querySelector(s);
+const listEl = $('#list'), weekEl = $('#week'), statsEl = $('#stats');
+
+function render() {
+  if (selected > todayKey()) selected = todayKey();
+  if (document.body.dataset.tab === 'stats') renderStats();
+  else { renderWeek(); renderList(); }
+}
+
+function renderWeek() {
+  const today = new Date(), t = keyOf(today);
+  // Сегодня в центре; если выбран день раньше чем 3 дня назад — центр на нём
+  const center = (selected >= keyOf(addDays(today, -3))) ? today : parseKey(selected);
+  const list = active();
+  let html = '';
+  for (let i = -3; i <= 3; i++) {
+    const d = addDays(center, i), k = keyOf(d), fut = k > t;
+    const p = fut ? 0 : dayInfo(list, k).p;
+    html += `<button class="day${k === selected ? ' sel' : ''}${k === t ? ' today' : ''}" data-k="${k}" ${fut ? 'disabled' : ''}
+      aria-label="${esc(fmt(d, { weekday: 'long', day: 'numeric', month: 'long' }))}">
+      <span class="wd">${esc(cap(fmt(d, { weekday: 'short' })))}</span>${ringHTML(p, d.getDate())}<span class="dot"></span></button>`;
+  }
+  weekEl.innerHTML = html;
+}
+
+function cardHTML(h, dim) {
+  const st = statusOf(h, selected);
+  const cap2 = st === 'skip' ? 'Вернуть' : selected === todayKey() ? 'Пропустить сегодня' : 'Пропустить день';
+  return `<div class="card${st === 'done' ? ' done' : ''}${st === 'skip' ? ' skipped' : ''}${dim ? ' dim' : ''}" data-id="${h.id}" role="button" tabindex="0" aria-pressed="${st === 'done'}">
+    <span class="cb">${CHECK}</span><span class="emo">${esc(h.emoji)}</span><span class="nm">${esc(h.name)}</span>
+    ${dim ? '' : `<button class="skip" data-skip aria-label="${cap2}">${SKIP}<small>${cap2}</small></button>`}
+  </div>`;
+}
+
+function renderList() {
+  const act = active(), vis = act.filter(h => h.start <= selected), paused = pausedList();
+  let html = '';
+  if (!state.habits.length) {
+    html = `<div class="empty"><div class="big">🌱</div><p>Пока нет привычек</p><button class="pill" data-new>Добавить привычку</button></div>`;
+  } else if (!vis.length && act.length) {
+    html = `<p class="hint">В этот день привычки ещё не начались</p>`;
+  }
+  html += vis.map(h => cardHTML(h, false)).join('');
+  if (paused.length) {
+    html += `<button class="paused-toggle${showPaused ? ' open' : ''}" data-paused-toggle>${ICONS.chevR} На паузе (${paused.length})</button>`;
+    if (showPaused) html += paused.map(h => cardHTML(h, true)).join('');
+  }
+  listEl.innerHTML = html;
+}
+
+function replaceCard(card, h, flash) {
+  const tmp = document.createElement('div'); tmp.innerHTML = cardHTML(h, false).trim();
+  const n = tmp.firstElementChild; card.replaceWith(n);
+  if (flash) n.classList.add('flash');
+  return n;
+}
+
+// Жесты: тап — отметить, долгое нажатие — меню
+const lp = { timer: null, fired: false, x: 0, y: 0, el: null };
+function cancelLP() { clearTimeout(lp.timer); if (lp.el) lp.el.classList.remove('pressed'); lp.el = null; }
+listEl.addEventListener('pointerdown', e => {
+  const c = e.target.closest('.card'); if (!c) return;
+  lp.el = c; lp.fired = false; lp.x = e.clientX; lp.y = e.clientY;
+  if (!e.target.closest('[data-skip]')) c.classList.add('pressed');
+  lp.timer = setTimeout(() => { lp.fired = true; c.classList.remove('pressed'); haptic(); openActions(c.dataset.id); }, 450);
+});
+listEl.addEventListener('pointermove', e => { if (lp.el && Math.hypot(e.clientX - lp.x, e.clientY - lp.y) > 10) cancelLP(); });
+['pointerup', 'pointercancel'].forEach(ev => listEl.addEventListener(ev, cancelLP));
+listEl.addEventListener('contextmenu', e => e.preventDefault());
+listEl.addEventListener('click', e => {
+  if (e.target.closest('[data-new]')) return openEditor(null);
+  if (e.target.closest('[data-paused-toggle]')) { showPaused = !showPaused; renderList(); return; }
+  const c = e.target.closest('.card'); if (!c) return;
+  if (lp.fired) { lp.fired = false; return; }
+  const h = byId(c.dataset.id); if (!h) return;
+  if (h.paused) return openActions(h.id);
+  const st = statusOf(h, selected);
+  if (e.target.closest('[data-skip]')) {
+    setStatus(h, selected, st === 'skip' ? 'none' : 'skip');
+    haptic(); commit(false); replaceCard(c, h, false); renderWeek();
+    if (st !== 'skip') toast('День пропущен — серия не прервётся');
+    return;
+  }
+  setStatus(h, selected, st === 'done' ? 'none' : 'done');
+  haptic(); commit(false); replaceCard(c, h, st !== 'done'); renderWeek();
+});
+listEl.addEventListener('keydown', e => {
+  const c = e.target.closest('.card'); if (!c || e.target.closest('[data-skip]')) return;
+  if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); c.click(); }
+});
+weekEl.addEventListener('click', e => { const b = e.target.closest('.day'); if (!b || b.disabled) return; selected = b.dataset.k; render(); });
+
+// ---------- Экран «Статистика» ----------
+function scopeList() { return statsScope === 'all' ? active() : [byId(statsScope)].filter(Boolean); }
+
+function renderStats() {
+  if (statsScope !== 'all' && !byId(statsScope)) statsScope = 'all';
+  const single = statsScope === 'all' ? null : byId(statsScope);
+  $('#picker').innerHTML = `<span class="pi">${single ? esc(single.emoji) : ICONS.allCheck}</span><span class="t">${single ? esc(single.name) : 'Все привычки'}</span>${ICONS.updown}`;
+  if (!state.habits.length) { statsEl.innerHTML = `<p class="hint">Добавь привычку — здесь появится прогресс</p>`; return; }
+
+  const list = scopeList(), all = single ? [single] : state.habits;
+  const now = new Date(), t = keyOf(now), mPrefix = t.slice(0, 7);
+  const streak = streakOf(list);
+  let mini = '';
+  for (let i = -4; i <= 0; i++) {
+    const d = addDays(now, i), inf = dayInfo(list, keyOf(d));
+    mini += inf.st === 'skip' ? `<span class="sk">${SKIP}</span>` : ringHTML(inf.p, d.getDate());
+  }
+  const monthDone = all.reduce((s, h) => s + h.done.filter(k => k.startsWith(mPrefix)).length, 0);
+  const totalDone = all.reduce((s, h) => s + h.done.length, 0);
+
+  // Какие месяцы показывать
+  const earliest = all.reduce((m, h) => h.start < m ? h.start : m, t);
+  const eY = +earliest.slice(0, 4), eM = +earliest.slice(5, 7) - 1;
+  statsYear = Math.min(Math.max(statsYear, eY), now.getFullYear());
+  const fromM = statsYear === eY ? eM : 0, toM = statsYear === now.getFullYear() ? now.getMonth() : 11;
+  let months = '';
+  for (let m = fromM; m <= toM; m++) {
+    const first = new Date(statsYear, m, 1), dim = new Date(statsYear, m + 1, 0).getDate();
+    let cells = '<span></span>'.repeat((first.getDay() + 6) % 7);
+    for (let n = 1; n <= dim; n++) {
+      const k = keyOf(new Date(statsYear, m, n));
+      if (k > t) { cells += `<span class="cd fut">${n}</span>`; continue; }
+      const inf = dayInfo(list, k);
+      if (inf.st === 'na') cells += `<span class="cd na">${n}</span>`;
+      else if (inf.st === 'skip') cells += `<button class="cd sk" data-k="${k}" aria-label="${n}, пропуск">${SKIP}</button>`;
+      else cells += `<button class="cd${k === t ? ' today' : ''}" data-k="${k}">${ringHTML(inf.p, n)}</button>`;
+    }
+    months += `<div class="month"><h3>${esc(cap(fmt(first, { month: 'long' })))}</h3><div class="mgrid">${cells}</div></div>`;
+  }
+
+  statsEl.innerHTML = `
+    <div class="grabber"><svg viewBox="0 0 40 12" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M4 4q16 8 32 0"/></svg></div>
+    <div class="streak-card"><span class="fire">🔥</span><span class="n">${streak}</span>
+      <span class="lbl">${plural(streak, 'День', 'Дня', 'Дней')}<br>подряд</span><span class="mini">${mini}</span></div>
+    <div class="pills">
+      <div class="spill"><span class="n">${monthDone}</span><span class="l">Выполнено<br>за ${esc(fmt(now, { month: 'long' }))}</span></div>
+      <div class="spill"><span class="n">${totalDone}</span><span class="l">Завершено<br>за всё время</span></div>
+    </div>
+    <div class="yearbar"><h2>${statsYear}</h2>
+      <button class="icon-btn" data-y="-1" aria-label="Предыдущий год" ${statsYear <= eY ? 'disabled' : ''}>${ICONS.chevL}</button>
+      <button class="icon-btn" data-y="1" aria-label="Следующий год" ${statsYear >= now.getFullYear() ? 'disabled' : ''}>${ICONS.chevR}</button></div>
+    ${months}
+    <p class="hint" style="font-size:13px">${single ? 'Нажми на день: выполнено → пропуск → пусто' : 'Нажми на день, чтобы открыть его привычки'}</p>`;
+}
+
+statsEl.addEventListener('click', e => {
+  const y = e.target.closest('[data-y]');
+  if (y && !y.disabled) { statsYear += +y.dataset.y; renderStats(); return; }
+  const c = e.target.closest('.cd[data-k]'); if (!c) return;
+  const k = c.dataset.k;
+  if (statsScope === 'all') { selected = k; switchTab('habits'); return; }
+  const h = byId(statsScope); if (!h) return;
+  const st = statusOf(h, k);
+  setStatus(h, k, st === 'none' ? 'done' : st === 'done' ? 'skip' : 'none');
+  haptic(); commit();
+});
+$('#picker').onclick = openPicker;
+
+function switchTab(tab) {
+  document.body.dataset.tab = tab;
+  if (tab === 'stats') statsYear = new Date().getFullYear();
+  window.scrollTo(0, 0); render();
+}
+document.querySelectorAll('.tab').forEach(b => b.onclick = () => switchTab(b.dataset.tab));
+document.querySelectorAll('[data-settings]').forEach(b => b.onclick = openSettings);
+$('#addBtn').onclick = () => openEditor(null);
+
+// ---------- Шторки ----------
+let current = null;
+function openSheet(html, cls = '') {
+  closeSheet(true);
+  const bd = document.createElement('div'); bd.className = 'backdrop';
+  const sh = document.createElement('div'); sh.className = 'sheet ' + cls;
+  sh.setAttribute('role', 'dialog'); sh.setAttribute('aria-modal', 'true'); sh.innerHTML = html;
+  document.body.append(bd, sh); void sh.offsetHeight;
+  bd.classList.add('open'); sh.classList.add('open');
+  bd.onclick = () => closeSheet(); current = { bd, sh };
+  document.body.style.overflow = 'hidden';
+  return sh;
+}
+function closeSheet(instant) {
+  if (!current) return;
+  const { bd, sh } = current; current = null; document.body.style.overflow = '';
+  if (instant) { bd.remove(); sh.remove(); return; }
+  bd.classList.remove('open'); sh.classList.remove('open');
+  setTimeout(() => { bd.remove(); sh.remove(); }, 340);
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSheet(); });
+function toast(msg) {
+  const t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+function openPicker() {
+  const items = [['all', ICONS.allCheck, 'Все привычки'], ...[...active(), ...pausedList()].map(h => [h.id, `<span class="e">${esc(h.emoji)}</span>`, esc(h.name)])];
+  const sh = openSheet(`<div class="actions"><div class="group">
+    ${items.map(([id, ic, n]) => `<button class="act" data-s="${id}">${ic}<span>${n}</span>${id === statsScope ? ICONS.tick : ''}</button>`).join('')}
+    </div><div class="group"><button class="act cancel" data-s="">Отмена</button></div></div>`, 'clear');
+  sh.onclick = e => {
+    const b = e.target.closest('[data-s]'); if (!b) return;
+    if (b.dataset.s) { statsScope = b.dataset.s; renderStats(); }
+    closeSheet();
+  };
+}
+
+function openActions(id) {
+  const h = byId(id); if (!h) return;
+  const acts = h.paused
+    ? [['resume', 'play', 'Возобновить'], ['stats', 'stats', 'Статистика'], ['edit', 'edit', 'Изменить']]
+    : [['stats', 'stats', 'Статистика'], ['edit', 'edit', 'Изменить'], ['up', 'up', 'Выше'], ['down', 'down', 'Ниже'], ['pause', 'pause', 'На паузу']];
+  const sh = openSheet(`<div class="actions"><div class="group">
+      <div class="act-head"><span class="e">${esc(h.emoji)}</span>${esc(h.name)}</div>
+      ${acts.map(([a, i, t]) => `<button class="act" data-a="${a}">${ICONS[i]}${t}</button>`).join('')}
+    </div><div class="group"><button class="act cancel" data-a="cancel">Отмена</button></div></div>`, 'clear');
+  sh.onclick = e => {
+    const b = e.target.closest('[data-a]'); if (!b) return;
+    const a = b.dataset.a; closeSheet();
+    if (a === 'stats') { statsScope = id; switchTab('stats'); }
+    else if (a === 'edit') setTimeout(() => openEditor(id), 10);
+    else if (a === 'up') move(id, -1);
+    else if (a === 'down') move(id, 1);
+    else if (a === 'pause') { h.paused = true; commit(); toast('Привычка на паузе'); }
+    else if (a === 'resume') { h.paused = false; commit(); }
+  };
+}
+
+// ---------- Редактор ----------
+const isEmojiChar = s => /\p{Extended_Pictographic}|\p{Regional_Indicator}/u.test(s);
+function lastGrapheme(s) {
+  if (window.Intl && Intl.Segmenter) { const g = [...new Intl.Segmenter('ru', { granularity: 'grapheme' }).segment(s)]; return g.length ? g[g.length - 1].segment : ''; }
+  return [...s].pop() || '';
+}
+function openEditor(id) {
+  const h = id ? byId(id) : null;
+  const draft = { name: h ? h.name : '', emoji: h ? h.emoji : '✨', start: h ? h.start : todayKey() };
+  let armed = false;
+  const sh = openSheet(`
+    <div class="sheet-head"><button class="link l" data-cancel>Отмена</button>
+      <div class="title">${h ? 'Изменить' : 'Новая привычка'}</div><button class="link strong r" data-save>Сохранить</button></div>
+    <div class="sheet-body">
+      <div class="emo-hero"><div class="big" id="emoPreview"></div></div>
+      <div class="group">
+        <input class="field" id="emoInput" placeholder="Свой эмодзи — с эмодзи-клавиатуры" autocomplete="off" autocorrect="off" spellcheck="false">
+        <div class="emo-grid" id="emoGrid">${EMOJI.map(e => `<button data-e="${e}">${e}</button>`).join('')}</div>
+      </div>
+      <p class="glabel">Название</p>
+      <div class="group"><input class="field" id="nameInput" placeholder="Например, пить воду утром" maxlength="60" value="${esc(draft.name)}"></div>
+      <div class="group"><div class="row"><span>Начало</span><input type="date" id="startInput" value="${draft.start}" max="${todayKey()}"></div></div>
+      ${h ? `<div class="group"><button class="danger-btn" data-delete>Удалить привычку</button></div>` : ''}
+    </div>`, 'full');
+  const prev = sh.querySelector('#emoPreview'), save = sh.querySelector('[data-save]'), nameI = sh.querySelector('#nameInput');
+  const sync = () => {
+    prev.textContent = draft.emoji;
+    sh.querySelectorAll('#emoGrid button').forEach(b => b.classList.toggle('on', b.dataset.e === draft.emoji));
+    save.disabled = !draft.name.trim();
+  };
+  sync();
+  if (!h) setTimeout(() => nameI.focus(), 350);
+  prev.onclick = () => sh.querySelector('#emoInput').focus();
+  sh.querySelector('#emoInput').addEventListener('input', e => {
+    const g = lastGrapheme(e.target.value);
+    if (g && isEmojiChar(g)) { draft.emoji = g; e.target.value = ''; e.target.blur(); haptic(); sync(); }
+    else if (e.target.value && !isEmojiChar(e.target.value)) e.target.value = '';
+  });
+  sh.querySelector('#emoGrid').onclick = e => { const b = e.target.closest('[data-e]'); if (b) { draft.emoji = b.dataset.e; haptic(); sync(); } };
+  nameI.addEventListener('input', e => { draft.name = e.target.value; sync(); });
+  sh.querySelector('#startInput').addEventListener('change', e => { if (e.target.value) draft.start = e.target.value; });
+  sh.querySelector('[data-cancel]').onclick = () => closeSheet();
+  save.onclick = () => {
+    if (!draft.name.trim()) return;
+    if (h) Object.assign(h, { name: draft.name.trim(), emoji: draft.emoji, start: draft.start });
+    else state.habits.push({ id: uid(), name: draft.name.trim(), emoji: draft.emoji, color: 0, start: draft.start,
+      paused: false, done: [], skipped: [], order: state.habits.reduce((m, x) => Math.max(m, x.order), -1) + 1 });
+    commit(); closeSheet();
+  };
+  const del = sh.querySelector('[data-delete]');
+  if (del) del.onclick = () => {
+    if (!armed) { armed = true; del.textContent = 'Нажми ещё раз — удалится вся история'; return; }
+    state.habits = state.habits.filter(x => x.id !== id); commit(); closeSheet(); toast('Привычка удалена');
+  };
+}
+
+// ---------- Настройки ----------
+const getLS = (k, d) => { try { return localStorage.getItem(k) || d; } catch (e) { return d; } };
+const setLS = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
+function applyTheme(t) { if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; }
+function applyAccent(a) { document.documentElement.dataset.accent = ACCENTS.some(x => x[0] === a) ? a : 'mono'; }
+
+function openSettings() {
+  let theme = getLS(THEME_KEY, 'auto');
+  const syncText = syncStatus === 'cloud' ? 'Данные сохраняются в твоём аккаунте Claude и в этом браузере.'
+    : syncStatus === 'error' ? 'Не удалось сохранить в облако — данные пока только в этом браузере.'
+    : 'Данные хранятся только в этом браузере на этом устройстве.';
+  const sh = openSheet(`
+    <div class="sheet-head"><span></span><div class="title">Настройки</div><button class="link strong r" data-close>Готово</button></div>
+    <div class="sheet-body">
+      <p class="glabel">Цвет</p>
+      <div class="group"><div class="swatches" id="sw">${ACCENTS.map(([id, c]) => `<button class="sw" data-a="${id}" style="background:${c}" aria-label="${id}"></button>`).join('')}</div></div>
+      <p class="glabel">Оформление</p>
+      <div class="group"><div class="seg" id="seg"><button data-t="auto">Авто</button><button data-t="light">Светлое</button><button data-t="dark">Тёмное</button></div></div>
+      <p class="glabel">Как поставить на экран «Домой»</p>
+      <div class="group"><p class="howto">Safari → «Поделиться» → «На экран „Домой“». Приложение будет открываться во весь экран.</p></div>
+      <p class="glabel">Резервная копия</p>
+      <div class="group"><textarea class="field" id="exportTa" readonly></textarea><button class="gbtn" data-copy>Скопировать</button></div>
+      <p class="gfoot">${syncText} Иногда сохраняй копию в Заметки.</p>
+      <p class="glabel">Восстановить из копии</p>
+      <div class="group"><textarea class="field" id="importTa" placeholder="Вставь сюда скопированные данные"></textarea><button class="gbtn" data-import>Восстановить</button></div>
+      <p class="gfoot">Заменит все текущие привычки.</p>
+    </div>`, 'full');
+  const mark = () => {
+    sh.querySelectorAll('#seg button').forEach(b => b.classList.toggle('on', b.dataset.t === theme));
+    sh.querySelectorAll('.sw').forEach(b => b.classList.toggle('on', b.dataset.a === document.documentElement.dataset.accent));
+  };
+  mark();
+  sh.querySelector('#seg').onclick = e => { const b = e.target.closest('[data-t]'); if (!b) return; theme = b.dataset.t; setLS(THEME_KEY, theme); applyTheme(theme); mark(); };
+  sh.querySelector('#sw').onclick = e => { const b = e.target.closest('[data-a]'); if (!b) return; setLS(ACCENT_KEY, b.dataset.a); applyAccent(b.dataset.a); haptic(); mark(); };
+  const ta = sh.querySelector('#exportTa');
+  ta.value = JSON.stringify({ app: 'habits', version: 2, habits: state.habits });
+  sh.querySelector('[data-copy]').onclick = async () => {
+    try { await navigator.clipboard.writeText(ta.value); toast('Скопировано'); }
+    catch (e) { ta.focus(); ta.select(); ta.setSelectionRange(0, ta.value.length); toast('Текст выделен — нажми «Скопировать»'); }
+  };
+  sh.querySelector('[data-import]').onclick = () => {
+    try {
+      const data = JSON.parse(sh.querySelector('#importTa').value);
+      const hs = Array.isArray(data) ? data : data.habits;
+      if (!Array.isArray(hs) || !hs.every(x => x && x.id && typeof x.name === 'string' && Array.isArray(x.done))) throw 0;
+      state = normalize({ habits: hs, updatedAt: 0 }); commit(); closeSheet(); toast(`Восстановлено привычек: ${hs.length}`);
+    } catch (e) { toast('Не похоже на данные из этого приложения'); }
+  };
+  sh.querySelector('[data-close]').onclick = () => closeSheet();
+}
+
+// ---------- Старт ----------
+applyTheme(getLS(THEME_KEY, 'auto'));
+applyAccent(getLS(ACCENT_KEY, 'mono'));
+loadLocal();
+render();
+initDb();
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') { selected = todayKey(); if (!current) render(); }
+});
+})();
+</script>
+</body>
+</html>
